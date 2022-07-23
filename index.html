@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MODELO-BASICO CRUD</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+  <ul id="myMenu">
+  <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search" title="Type in a category">
+
+  <li><a href="#">NOME PRODUTO</a></li>
+  <input type="text" />
+  <li><a href="#">FABRICANTE</a></li>
+  <input type="text" />
+  <li><a href="#">CATEGORIA DO PRODUTO</a></li>
+  <input type="text" />
+  <li><a href="#">QUANTIDADE</a></li>
+  <input type="text" />
+<P>Dicas e Sugestões</P>
+
+<form>
+  <textarea></textarea>
+  <button>Enviar</button>
+  
+</form>
+
+
+ 
+</ul>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <span>Cadastrar Produto</span>
+      <span>Produtos cadastrados</span>
+      <button onclick="openModal()" id="new">Adicionar Produto</i></button>
+    </div>
+
+
+     <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Fabricante</th>
+            <th>Preço</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+
+  
+    </style>
+    </head>
+    <body>
+
+<!-- Page content -->
+      <div class="content">
+        
+      
+      <div class="modal-container">
+      <div class="modal">
+        <form>
+          <label for="m-nome">Produto</label>
+          <input id="m-nome" type="text" required />
+  
+          <label for="m-funcao">Fabricante</label>
+          <input id="m-funcao" type="text" required />
+  
+          <label for="m-salario">Preço</label>
+          <input id="m-salario" type="number" required />
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
